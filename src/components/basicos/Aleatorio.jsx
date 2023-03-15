@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+const Aleatorio = (props) => {
   const { min, max } = props;
   const aleatorio =
     parseInt(Math.random() * (props.max - props.min)) + props.min;
@@ -19,3 +19,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Aleatorio;
